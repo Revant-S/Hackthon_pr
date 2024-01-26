@@ -11,7 +11,7 @@ const cookies = require("cookie-parser")
 app.use(cookies())
 app.use(cors())
 async function serverTurnON() {    
-    await mongoose.connect("mongodb://localhost:27017/Hackathon");
+    await mongoose.connect(URL);
     app.listen(3000,function (){  console.log("Server is activated")})
 }
 serverTurnON()
