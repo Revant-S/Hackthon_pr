@@ -17,7 +17,7 @@ async function serverTurnON() {
 serverTurnON()
 
 app.use(express.json())
-app.use(authRouters)   // **************Individually working fine****************
+app.use(authRouters) 
 app.use("/Poll",requireAuth,PollRoutes)
 
 app.use(function (err,req,res,next) {
