@@ -6,7 +6,7 @@ const requireAuth = (req,res,next)=>{
   const UserJwt = req.cookies.jwt;
   
     if (!UserJwt) {
-        res.json({msg : "User Jwt Not Found"})  // Replace this with redirect to the login page
+        res.json({msg : "User Jwt Not Found"})  
         return
     }
     try {
