@@ -7,7 +7,7 @@ const PollSchema = mongoose.Schema({
     },
     UpVotes : Number,
     downVotes : Number,
-    Poll_State : Number, // 0 --> Pending 1-->Inprogress 2 -->Completed   
+    Poll_State : Number,   
     Location : {
         type : String,
         requiered : true,
